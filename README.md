@@ -57,7 +57,7 @@ Objective (Cost) Function:
 Mean Squared Error (MSE):
 The objective is to minimize the difference between predicted and actual values. The Mean Squared Error is commonly used as the cost function:
 
-$MSE= 1/2m * ∑_{i=* ^m (y_i - (mx_i + b))^2$
+$MSE= 1/2*m * ∑_{i=1} ^m (y_i - (mx_i + b))^2$
 $m$ is the number of data points.
 $y_i$ is the actual output for the i-th data point.
 $mx_i + b$ is the predicted output.
