@@ -66,7 +66,7 @@ The goal is to minimize this cost function by adjusting the coefficients and int
 Optimization Algorithm:
 Gradient Descent:
 Gradient Descent is often employed to find the minimum of the cost function. It iteratively updates the coefficients and intercept in the opposite direction of the gradient to reach the minimum. The update rule for the weights (m) and intercept (b) is given by:
-$m = m − α * ∂/∂_m * MSE$ 
+$m = m − α * \sigma/\sigma_m * MSE$ 
 $b = b − α * ∂/∂_b * MSE$
 $α$ is the learning rate.
 
