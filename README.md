@@ -40,12 +40,12 @@ Reinforcement learning involves training an algorithm to make sequential decisio
 Linear regression is a supervised learning algorithm used for predicting a continuous outcome variable (dependent variable) based on one or more predictor variables (independent variables). It assumes a linear relationship between the input features and the output.
 
 ## Mathematical Representation:
-Consider a simple linear regression with one independent variable (feature) and one dependent variable. The relationship can be expressed as: y = mx + b.
-y is the dependent variable (output).
-x is the independent variable (input).
-m is the slope of the line (coefficient).
-b is the y-intercept.
-For multiple independent variables, the equation becomes a hyperplane: $y = b + ∑ i=1 n (m i$
+Consider a simple linear regression with one independent variable (feature) and one dependent variable. The relationship can be expressed as: $y = mx + b$.
+$y$ is the dependent variable (output).
+$x$ is the independent variable (input).
+$m$ is the slope of the line (coefficient).
+$b$ is the y-intercept.
+For multiple independent variables, the equation becomes a hyperplane: $y = b + ∑_{i=1} ^n (m i$
 ​	
  ⋅x 
 i
