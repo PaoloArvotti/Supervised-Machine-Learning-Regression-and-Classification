@@ -57,7 +57,7 @@ Objective (Cost) Function:
 Mean Squared Error (MSE):
 The objective is to minimize the difference between predicted and actual values. The Mean Squared Error is commonly used as the cost function:
 
-$ MSE= 1/2m * ∑_{i=* ^m (y_i - (mx_i + b))^2$
+$MSE= 1/2m * ∑_{i=* ^m (y_i - (mx_i + b))^2$
 $m$ is the number of data points.
 $y_i$ is the actual output for the i-th data point.
 $mx_i + b$ is the predicted output.
@@ -66,7 +66,7 @@ The goal is to minimize this cost function by adjusting the coefficients and int
 Optimization Algorithm:
 Gradient Descent:
 Gradient Descent is often employed to find the minimum of the cost function. It iteratively updates the coefficients and intercept in the opposite direction of the gradient to reach the minimum. The update rule for the weights (m) and intercept (b) is given by:
-$ m = m − α * ∂/∂_m * MSE$ 
+$m = m − α * ∂/∂_m * MSE$ 
 $b = b − α * ∂/∂_b * MSE$
 $α$ is the learning rate.
 
@@ -85,81 +85,6 @@ Evaluation:
 R-squared (R^2):
 
 R-squared measures the proportion of the variance in the dependent variable that is predictable from the independent variables. It ranges from 0 to 1, where 1 indicates a perfect fit.
-
-R
-2
-=
-1
-−
-∑
-i
-=
-1
-m
-(
-y
-i
-−
-y
-^
-i
-)
-2
-∑
-i
-=
-1
-m
-(
-y
-i
-−
-y
-ˉ
-)
-2
-R 
-2
- =1− 
-∑ 
-i=1
-m
-​	
- (y 
-i
-​	
- − 
-y
-ˉ
-​	
- ) 
-2
- 
-∑ 
-i=1
-m
-​	
- (y 
-i
-​	
- − 
-y
-^
-​	
-  
-i
-​	
- ) 
-2
- 
-​	
- 
-
-y
-^
-i
-y
-^
 ​	
   
 i
