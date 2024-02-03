@@ -45,146 +45,34 @@ $y$ is the dependent variable (output).
 $x$ is the independent variable (input).
 $m$ is the slope of the line (coefficient).
 $b$ is the y-intercept.
-For multiple independent variables, the equation becomes a hyperplane: $y = b + ∑_{i=1} ^n (m i$
-​	
- ⋅x 
-i
-​	
- )
-
-n
-n is the number of features.
+For multiple independent variables, the equation becomes a hyperplane: $y = b + ∑_{i=1} ^n (m_i * x_i)$
+$n$ is the number of features.
 Parameters:
 Coefficients (Weights):
-
-The coefficients (
-m
-m values) represent the weights assigned to each feature. The model learns these weights during the training process to minimize the error in predictions.
-
+The coefficients (m values) represent the weights assigned to each feature. The model learns these weights during the training process to minimize the error in predictions.
 Intercept:
-
-The intercept (
-b
-b value) represents the point where the regression line intersects the y-axis. It is the baseline prediction when all input features are zero.
+The intercept (b value) represents the point where the regression line intersects the y-axis. It is the baseline prediction when all input features are zero.
 
 Objective (Cost) Function:
 Mean Squared Error (MSE):
-
 The objective is to minimize the difference between predicted and actual values. The Mean Squared Error is commonly used as the cost function:
 
-M
-S
-E
-=
-1
-2
-m
-∑
-i
-=
-1
-m
-(
-y
-i
-−
-(
-m
-x
-i
-+
-b
-)
-)
-2
-MSE= 
-2m
-1
-​	
- ∑ 
-i=1
-m
-​	
- (y 
-i
-​	
- −(mx 
-i
-​	
- +b)) 
-2
- 
-
-m
-m is the number of data points.
-y
-i
-y 
-i
-​	
-  is the actual output for the i-th data point.
-m
-x
-i
-+
-b
-mx 
-i
-​	
- +b is the predicted output.
+$ MSE= 1/2m * ∑_{i=* ^m (y_i - (mx_i + b))^2$
+$m$ is the number of data points.
+$y_i$ is the actual output for the i-th data point.
+$mx_i + b$ is the predicted output.
 The goal is to minimize this cost function by adjusting the coefficients and intercept.
 
 Optimization Algorithm:
 Gradient Descent:
+Gradient Descent is often employed to find the minimum of the cost function. It iteratively updates the coefficients and intercept in the opposite direction of the gradient to reach the minimum. The update rule for the weights (m) and intercept (b) is given by:
+$ m = m − α * ∂/∂_m * MSE$ 
+$b = b − α * ∂/∂_b * MSE$
+$α$ is the learning rate.
 
-Gradient Descent is often employed to find the minimum of the cost function. It iteratively updates the coefficients and intercept in the opposite direction of the gradient to reach the minimum. The update rule for the weights (
-m
-m) and intercept (
-b
-b) is given by:
-
-m
-=
-m
-−
-α
-∂
-∂
-m
-M
-S
-E
-m=m−α 
-∂m
-∂
-​	
- MSE
-b
-=
-b
-−
-α
-∂
-∂
-b
-M
-S
-E
-b=b−α 
-∂b
-∂
-​	
- MSE
-
-α
-α is the learning rate.
 Training Process:
 Initialize Parameters:
-Set initial values for coefficients (
-m
-m) and intercept (
-b
-b).
+Set initial values for coefficients (m) and intercept (b).
 Compute Predictions:
 Use the current parameters to make predictions.
 Calculate Cost:
@@ -194,7 +82,7 @@ Use gradient descent to update the coefficients and intercept.
 Repeat:
 Repeat steps 2-4 until convergence or a predefined number of iterations.
 Evaluation:
-R-squared (R²):
+R-squared (R^2):
 
 R-squared measures the proportion of the variance in the dependent variable that is predictable from the independent variables. It ranges from 0 to 1, where 1 indicates a perfect fit.
 
